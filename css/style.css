@@ -11,6 +11,33 @@ body {
   padding: 40px 20px;
 }
 
+.header {
+  background-color: hsl(330, 40%, 16%);
+  padding: 20px 30px;
+  box-shadow: 0 4px 20px hsla(330, 80%, 50%, 0.15);
+  margin-bottom: 40px;
+}
+ 
+.header__content {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+ 
+.header__logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+ 
+.header__title {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
 .card-list {
   display: flex;
   flex-wrap: wrap;
