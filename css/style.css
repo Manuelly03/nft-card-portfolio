@@ -39,26 +39,26 @@ body {
 }
 
 .card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  justify-content: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
- 
 @media (max-width: 1100px) {
   .card-list {
     grid-template-columns: repeat(2, 1fr);
   }
 }
- 
+
 @media (max-width: 600px) {
   .card-list {
     grid-template-columns: 1fr;
   }
 }
+
  
 .animate__animated {
   animation-fill-mode: both;
@@ -68,7 +68,6 @@ body {
   background-color: hsl(330, 40%, 18%);
   border-radius: 15px;
   padding: 24px;
-  max-width: 350px;
   width: 100%;
   box-shadow: 0 10px 30px hsla(330, 80%, 50%, 0.15);
   transition: transform 0.3s ease;
